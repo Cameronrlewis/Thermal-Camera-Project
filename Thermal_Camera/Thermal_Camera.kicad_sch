@@ -7129,6 +7129,12 @@
 		(uuid "95de6556-f260-49ee-8ed4-c22d7c0434df")
 	)
 	(junction
+		(at 293.37 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95f4470c-b10d-4dc0-8b91-da8519b60850")
+	)
+	(junction
 		(at 31.75 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8109,6 +8115,16 @@
 			(type default)
 		)
 		(uuid "d6ca11fb-d99a-4160-a17b-5040b2629afa")
+	)
+	(wire
+		(pts
+			(xy 293.37 137.16) (xy 300.99 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d939d65a-7b23-458f-8eb5-eb0aca732fc9")
 	)
 	(wire
 		(pts
@@ -9535,6 +9551,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 300.99 139.7 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26f53adc-8125-41b8-afe3-cf61a4f96264")
+		(property "Reference" "C20"
+			(at 295.402 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10uF"
+			(at 295.148 141.224 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 300.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 300.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87757697-b05d-41dc-9a1a-c1a41ff59a6d")
+		)
+		(pin "2"
+			(uuid "7e4abb96-4110-4b4e-886a-03e1bdd6cc84")
+		)
+		(instances
+			(project "Thermal_Camera"
+				(path "/69bb2319-c70b-40cf-9602-3016c4fa9ddb"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_SPST")
 		(at 48.26 133.35 0)
 		(unit 1)
@@ -10004,6 +10090,72 @@
 			(project "Thermal_Camera"
 				(path "/69bb2319-c70b-40cf-9602-3016c4fa9ddb"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 300.99 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b5194e8-ed62-468f-b78e-eb77a7e4e6ad")
+		(property "Reference" "#PWR053"
+			(at 300.99 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 300.99 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 300.99 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 300.99 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 300.99 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0d1fca8-2c46-4c02-9828-d78976ac5101")
+		)
+		(instances
+			(project "Thermal_Camera"
+				(path "/69bb2319-c70b-40cf-9602-3016c4fa9ddb"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -10823,7 +10975,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2uH"
+		(property "Value" "3.9uH"
 			(at 226.06 43.18 90)
 			(effects
 				(font
@@ -11721,7 +11873,8 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 262.89 44.45 180)
+		(at 262.89 44.45 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11729,7 +11882,7 @@
 		(dnp no)
 		(uuid "8228716a-dcf3-434d-ae53-d53a247eb648")
 		(property "Reference" "C13"
-			(at 256.54 44.45 0)
+			(at 269.24 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11737,8 +11890,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 255.016 45.466 0)
+		(property "Value" "1uF"
+			(at 270.764 45.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
