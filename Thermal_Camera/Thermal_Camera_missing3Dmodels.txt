@@ -1,0 +1,9 @@
+### Missing 3D models - created on 2026-04-03 18:21
+### Printed by checking_3D_models plugin
+Board file: /Users/cameron/Documents/GitHub/Thermal-Camera-Project/Thermal_Camera/Thermal_Camera.kicad_pcb
+3D missing models written to:
+/Users/cameron/Documents/GitHub/Thermal-Camera-Project/Thermal_Camera/Thermal_Camera_missing3Dmodels.txt
+-------
+-------
+NUM of 3D missing models:0
+checked extensions ['.stp', '.step', '.stpZ']
